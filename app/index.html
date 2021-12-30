@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="format-detection" content="telephone=0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="shortcut icon"  type="image/x-icon" href="return.png">
+
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>Netflix | Landing Page UI Design</title>
+</head>
+<body class="body">
+   <!-- preloader -->
+	<div class="preloader">		
+		<div class="preloader-2">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<!-- preloader -->
+   <header id="header">
+      <a href="#" class="logo"><img src="img/logo.webp" alt=""></a>
+      <ul class="navigation">
+         <li><a href="#">Home</a></li>
+         <li><a href="#">TV Shows</a></li>
+         <li><a href="#">Movies</a></li>
+         <li><a href="#">Latest</a></li>
+         <li><a href="#">My List</a></li>
+      </ul>
+      <div class="search">
+         <input type="text" placeholder="Search">
+         <img src="img/sr.webp" alt="поиск"class="fa-search">         
+      </div>
+   </header>   
+   <div class="banner">
+      <img src="img/bg.webp" alt="мулан с мечём" class="bg">
+      <div class="content">
+         <img src="img/name.webp" alt="mulan disney" class="movieTitle">
+         <h4>
+            <span>2020</span>
+            <span><i>12+</i></span>
+            <span>1h 55min</span>
+            <span>Action</span>
+         </h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Incidunt cum molestias hic laborum dolorem distinctio accusamus quisquam harum? Voluptatum et maiores dolores reiciendis magnam a nemo fugit nam ullam at Sunt ratione perspiciatis officiis, quisquam saepe illum voluptates perferendis quibusdam architecto Maxime, quo quibusdam, maiores sit explicabo perspiciatis quos ullam similique mollitia, architecto nam quidem ab Harum neque autem suscipit!</p>
+         <div class="buttons">
+            <a href="#">
+               <img src="img/pl.webp" alt="смотреть" class="fa-play">
+               <strong>play</strong>
+            </a>
+            <a href="#">
+               <img src="img/plus.webp" alt="добавить" class="fa-play">
+               <strong>my list</strong>
+            </a>
+         </div>
+      </div>
+      <a class="play" onclick="toggleVideo();"><img src="img/play.webp" alt="">Watch Trailer</a>
+   </div>
+   <div class="trailer">
+      <video src="video1.mp4" controls="controls" autoplay="true" type="video/mp4"></video>
+      <img src="img/close.webp" class="close" onclick="toggleVideo();">
+   </div>
+  
+   <script src="js/main.js"></script>
+   <script>
+      function toggleVideo() {
+         const trailer = document.querySelector('.trailer');
+         const video = document.querySelector('video');
+         trailer.classList.toggle('active')
+         video.currentTime = 0;
+         video.pause();
+      }
+   </script>
+</body>
+</html>
